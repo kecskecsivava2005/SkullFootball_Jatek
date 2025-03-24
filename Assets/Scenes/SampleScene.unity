@@ -8324,6 +8324,10 @@ PrefabInstance:
       value: -0.850272
       objectReference: {fileID: 0}
     - target: {fileID: 6559854197021559857, guid: 8d377b5b41f3c8547a86c68ccab86f8b, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6559854197021559857, guid: 8d377b5b41f3c8547a86c68ccab86f8b, type: 3}
       propertyPath: m_Name
       value: Ball
       objectReference: {fileID: 0}
