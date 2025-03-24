@@ -13,7 +13,7 @@ public class GoalDetection : MonoBehaviour
     void Start()
     {
         // A labda kiinduló pozícióját tároljuk el
-        initialPosition = ball;
+        initialPosition = ball.position;
         UpdateGoalCounter();
     }
 
