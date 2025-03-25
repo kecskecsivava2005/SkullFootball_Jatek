@@ -60,6 +60,11 @@ public class CharacterSelector : MonoBehaviour
         SceneManager.LoadScene("SampleScene");
     }
     // Update is called once per frame
+
+    public void BacktoMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
     void Update()
     {
         
