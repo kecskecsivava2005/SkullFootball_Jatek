@@ -1182,8 +1182,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Skull Football 2D/P
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
-  m_sharedMaterial: {fileID: 2140032, guid: dc36b3fdc14f47ebb36fd484a67e268a, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 31ec09fcf78a8014d88cbb741b05ee30, type: 2}
+  m_sharedMaterial: {fileID: 2140032, guid: 31ec09fcf78a8014d88cbb741b05ee30, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
