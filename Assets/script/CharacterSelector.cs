@@ -10,13 +10,14 @@ public class CharacterSelector : MonoBehaviour
     public Image player2Image;
     public Sprite[] characters;
     private int player1Index = 0;
-    private int player2Index = 0;
+    private int player2Index = 1;
+    public static int[] selected = new int[2];
 
-    // Start is called before the first frame update
+    
     void Start()
     {
         player1Index = PlayerPrefs.GetInt("Player1Character", 0);
-        player2Index = PlayerPrefs.GetInt("Player2Character", 0);
+        player2Index = PlayerPrefs.GetInt("Player2Character", 1);
         UpdateCharacters();
     }
 
@@ -54,6 +55,8 @@ public class CharacterSelector : MonoBehaviour
 
     public void StartGame()
     {
+        selected[0] = player1Index;
+        selected[1] = player2Index + 3;
         PlayerPrefs.SetInt("Player1Character", player1Index);
         PlayerPrefs.SetInt("Player2Character", player2Index);
         PlayerPrefs.Save();
