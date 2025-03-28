@@ -11,7 +11,7 @@ public class CharacterSelector : MonoBehaviour
     public Sprite[] characters;
     private int player1Index = 0;
     private int player2Index = 1;
-    public static int[] selected = new int[2];
+    public static int[] selected = new int[2] {0,0};
 
     
     void Start()
@@ -62,7 +62,7 @@ public class CharacterSelector : MonoBehaviour
         PlayerPrefs.Save();
         SceneManager.LoadScene("SampleScene");
     }
-    // Update is called once per frame
+    
 
     public void BacktoMenu()
     {

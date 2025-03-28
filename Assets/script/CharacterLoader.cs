@@ -9,7 +9,7 @@ public class CharacterLoader : MonoBehaviour
     private GameObject[] characters;
     void Start()
     {
-        if (selected is null)
+        if (selected[0] > 2 || selected[1] <3 || selected is null)
         {
             selected = new int[] { 0, 3 };
         }
