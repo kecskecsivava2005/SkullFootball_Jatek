@@ -5,14 +5,14 @@ using TMPro;
 
 public class GameTimer : MonoBehaviour
 {
-    public float gameTime = 60f; // Játékidõ másodpercben
+    public float gameTime = 60f; 
     private float currentTime;
-    public TextMeshProUGUI timerText;  // UI szöveg az idõ kijelzésére
-    public GameObject gameOverPanel;   // Panel, ami megjelenik, ha lejár az idõ
+    public TextMeshProUGUI timerText;  
+    public GameObject gameOverPanel;   
 
     void Start()
     {
-        gameOverPanel.SetActive(false); // Elrejtjük a Game Over panelt
+        gameOverPanel.SetActive(false); 
         Time.timeScale=1.0f;
     }
 
@@ -21,7 +21,7 @@ public class GameTimer : MonoBehaviour
         if (gameTime > 0)
         {
             gameTime -= Time.deltaTime;
-            timerText.text = Mathf.Ceil(gameTime).ToString(); // Kerekítve írja ki az idõt
+            timerText.text = Mathf.Ceil(gameTime).ToString();
 
         }
         else
@@ -33,18 +33,18 @@ public class GameTimer : MonoBehaviour
     void EndGame()
     {
         gameTime = 0;
-        gameOverPanel.SetActive(true);  // Megjeleníti a Game Over panelt
+        gameOverPanel.SetActive(true);  
         Time.timeScale = 0f;
 
     }
 
     public void RestartGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name); // Jelenet újratöltése
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
     }
 
     public void ExitToMainMenu()
     {
-        SceneManager.LoadScene("MainMenu"); // Fõmenü betöltése
+        SceneManager.LoadScene("MainMenu"); 
     }
 }

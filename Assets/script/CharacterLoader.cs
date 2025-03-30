@@ -13,16 +13,6 @@ public class CharacterLoader : MonoBehaviour
         {
             selected = new int[] { 0, characters.Length/2 };
         }
-
-        // Minden karaktert a külön tárolóba helyezünk
-        /*
-        foreach (var actual_character in characters)
-        {
-            actual_character.transform.position = new Vector2(0, -11);
-        }
-        */
-
-        // Ezután a selected character vissza kerül a helyére
         characters[selected[0]].transform.position = new Vector2(-6.5f, -1f);
         characters[selected[1]].transform.position = new Vector2(6.5f, -1f);
 

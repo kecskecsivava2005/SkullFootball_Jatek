@@ -5,25 +5,24 @@ using UnityEngine.UI;
 
 public class GoalDetection : MonoBehaviour
 {
-    public Transform ball; // A labda transformja
-    public Vector3 initialPosition; // A labda kiinduló pozíciója
-    public Text goalCounterText; // A UI szöveg eleme, ahol a gólok száma jelenik meg
-    private int goalCount = 0; // Gólok száma
-
+    public Transform ball; 
+    public Vector3 initialPosition; 
+    public Text goalCounterText; 
+    private int goalCount = 0; 
     void Start()
     {
-        // A labda kiinduló pozícióját tároljuk el
+      
         initialPosition = ball.position;
         UpdateGoalCounter();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Ball")) // Ellenõrizzük, hogy a labda lépett-e be a triggerbe
+        if (other.CompareTag("Ball")) 
         {
-            goalCount++; // Gólok száma növelése
-            UpdateGoalCounter(); // Számláló frissítése
-            ResetBallPosition(); // Labda visszaállítása középre
+            goalCount++; 
+            UpdateGoalCounter(); 
+            ResetBallPosition(); 
         }
     }
 
@@ -33,8 +32,8 @@ public class GoalDetection : MonoBehaviour
         Rigidbody2D rb = ball.GetComponent<Rigidbody2D>();
         if (rb != null)
         {
-            rb.velocity = Vector2.zero; // Sebesség nullázása
-            rb.angularVelocity = 0; // Forgás megállítása
+            rb.velocity = Vector2.zero; 
+            rb.angularVelocity = 0; 
         }
     }
 
