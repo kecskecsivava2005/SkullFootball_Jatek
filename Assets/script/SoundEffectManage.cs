@@ -6,7 +6,6 @@ using UnityEngine.UI;
 public class SoundEffectManage : MonoBehaviour
 {
     [SerializeField] Slider volumeSlider;
-    // Start is called before the first frame update
     void Start()
     {
         if (!PlayerPrefs.HasKey("masterVolume"))

@@ -68,8 +68,4 @@ public class CharacterSelector : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
-    void Update()
-    {
-        
-    }
 }

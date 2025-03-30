@@ -17,7 +17,7 @@ public class GoalDetection : MonoBehaviour
         UpdateGoalCounter();
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Ball")) // Ellenõrizzük, hogy a labda lépett-e be a triggerbe
         {

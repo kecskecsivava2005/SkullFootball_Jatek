@@ -10,11 +10,6 @@ public class PauseMenu : MonoBehaviour
 
     private bool isPaused = false;
 
-    void Start()
-    {
-        
-    }
-
     public void Resume()
     {
         pauseMenuUI.SetActive(false);

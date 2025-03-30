@@ -10,11 +10,11 @@ public class MusicManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(gameObject); // Megmarad Scene váltáskor
+            DontDestroyOnLoad(gameObject); 
         }
         else
         {
-            Destroy(gameObject); // Ha már létezik, ne legyen belõle több
+            Destroy(gameObject); 
         }
     }
 
