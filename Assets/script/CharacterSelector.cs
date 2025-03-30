@@ -56,7 +56,7 @@ public class CharacterSelector : MonoBehaviour
     public void StartGame()
     {
         selected[0] = player1Index;
-        selected[1] = player2Index + 3;
+        selected[1] = player2Index + characters.Length;
         PlayerPrefs.SetInt("Player1Character", player1Index);
         PlayerPrefs.SetInt("Player2Character", player2Index);
         PlayerPrefs.Save();
