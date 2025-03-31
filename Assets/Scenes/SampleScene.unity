@@ -2311,7 +2311,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Az id\u0151 lej\xE1rt!\nKezdj \xFAj j\xE1t\xE9kot vagy l\xE9pj ki a f\u0151men\xFCbe!"
+  m_text: 'Time is over!
+
+    Start a new game or exit to the main menu!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5292,7 +5294,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -185631974832317591, guid: 3b83296d8db48a140a70599251ecfe67, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 121d11bb1afcebe44baaa12552c8ef59, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 35fe6cb2513840045b1b7f21e2d2b430, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
